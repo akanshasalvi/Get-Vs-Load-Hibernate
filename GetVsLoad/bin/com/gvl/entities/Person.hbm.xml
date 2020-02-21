@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.gvl.entities.Person" table="person">
+		<id name="person_id" />
+		<property name="person_name" />
+		<property name="age" />
+		<property name="gender" />
+		<property name="email_address" />
+		<property name="contact_no" />
+	</class>
+</hibernate-mapping>
