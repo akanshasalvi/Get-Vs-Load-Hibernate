@@ -13,8 +13,9 @@ public class Test {
 	
 		SessionFactory sessionfactory = SessionFactoryRegistry.getSessionfactory();
 		Session session = sessionfactory.openSession();
-		Person person = session.get(Person.class, "P01");
-		System.out.println(person);
+		Person person = session.load(Person.class, "P01");
+		System.out.println(person.getAge());
+		System.out.println(person.getClass().getCanonicalName());
 		
 		session.close();
 	}	

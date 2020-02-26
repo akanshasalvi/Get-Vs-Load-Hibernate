@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="com.gvl.entities.Person" table="person">
+	<class name="com.gvl.entities.Person" table="person" lazy="true">
 		<id name="person_id" />
 		<property name="person_name" />
 		<property name="age" />
